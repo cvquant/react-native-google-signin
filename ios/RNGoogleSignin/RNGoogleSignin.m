@@ -126,5 +126,9 @@ RCT_EXPORT_METHOD(revokeAccess)
                                       annotation:annotation];
 }
 
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
 
 @end
