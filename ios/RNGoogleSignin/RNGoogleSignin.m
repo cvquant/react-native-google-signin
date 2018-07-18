@@ -1,5 +1,5 @@
 #import "RNGoogleSignIn.h"
-#import "RCTEventDispatcher.h"
+#import <React/RCTEventDispatcher.h>
 
 
 @implementation RNGoogleSignin
@@ -126,5 +126,9 @@ RCT_EXPORT_METHOD(revokeAccess)
                                       annotation:annotation];
 }
 
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
 
 @end
